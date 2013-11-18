@@ -1,0 +1,28 @@
+package model;
+/**
+ * User represents one user in the database.
+ * @author vonwalml
+ */
+public class User { 
+    private String UID, firstname, lastname, street, city, state, email;
+    //private String password;
+    int zip;
+    int phone;
+    
+    public User(String UID, String firstname, String lastname, String street, String city, 
+            String state, int zip, String email, int phone) {
+        this.UID = UID;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.street = street;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.email = email;
+        this.phone = phone;
+    }
+    
+    public String getUID() {return UID;}
+    public String getfirstname() {return firstname;}
+    //continue...
+}
