@@ -10,10 +10,9 @@ public class User {
    private String firstName, lastName, city, state, email, password;
    private int UID, zipCode, phoneNum; 
    
-   public User(String firstName, String lastName, String city, 
-               String state, String email, String password, 
-               int UID, int zipCode, int phoneNum) {
-               
+   public User(int UID, String firstName, String lastName, String city, 
+         int zipCode, String state, int phoneNum, String email, String password) {
+      
       this.firstName = firstName;
       this.lastName = lastName;
       this.city = city;
@@ -24,6 +23,7 @@ public class User {
       this.zipCode = zipCode;
       this.phoneNum = phoneNum;
    }
+   
    public String getFirstName(){ return firstName;}
    public String getLastName(){ return lastName;}
    public String getCity(){ return city;}
