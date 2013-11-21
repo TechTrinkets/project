@@ -1,28 +1,37 @@
 package model;
+
 /**
- * User represents one user in the database.
- * @author vonwalml
+ * User represents the users in the regeistry
+ * @author Allen
  */
-public class User { 
-    private String UID, firstname, lastname, street, city, state, email;
-    //private String password;
-    int zip;
-    int phone;
-    
-    public User(String UID, String firstname, String lastname, String street, String city, 
-            String state, int zip, String email, int phone) {
-        this.UID = UID;
-        this.firstname = firstname;
-        this.lastname = lastname;
-        this.street = street;
-        this.city = city;
-        this.state = state;
-        this.zip = zip;
-        this.email = email;
-        this.phone = phone;
-    }
-    
-    public String getUID() {return UID;}
-    public String getfirstname() {return firstname;}
-    //continue...
+
+public class User {
+
+   private String firstName, lastName, city, state, email, password;
+   private int UID, zipCode, phoneNum; 
+   
+   public User(String firstName, String lastName, String city, 
+               String state, String email, String password, 
+               int UID, int zipCode, int phoneNum) {
+               
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.city = city;
+      this.state = state;
+      this.email = email;
+      this.password = password;
+      this.UID = UID;
+      this.zipCode = zipCode;
+      this.phoneNum = phoneNum;
+   }
+   public String getFirstName(){ return firstName;}
+   public String getLastName(){ return lastName;}
+   public String getCity(){ return city;}
+   public String getState(){ return state;}
+   public String getEmail(){ return email;}
+   public String getPassword(){ return password;}
+   public int getUID(){ return UID; }
+   public int getZipCode(){ return zipCode; }
+   public int getPhoneNumber(){ return phoneNum; }
+   
 }
