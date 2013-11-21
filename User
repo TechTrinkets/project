@@ -11,7 +11,7 @@ public class User {
    private int UID, zipCode, phoneNum; 
    
    public User(int UID, String firstName, String lastName, String city, 
-         int zipCode, String state, int phoneNum, String email, String password) {
+         String state, int zipCode, int phoneNum, String email, String password) {
       
       this.firstName = firstName;
       this.lastName = lastName;
