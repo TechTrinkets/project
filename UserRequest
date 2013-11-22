@@ -4,7 +4,8 @@ import java.util.*;
 import java.sql.*;
 
 /*
- * Handle requests for user, product, order, and order-product information
+ * Handle requests for user, product, order, and order-product information.
+ * @author Allen
  */
  
 public class UserRequest{
