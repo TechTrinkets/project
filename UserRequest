@@ -33,9 +33,10 @@ public class UserRequest{
             int phoneNum = rs.getInt(i++);
             String email = rs.getString(i++);
             String password = rs.getString(i++);
+            String username = rs.getString(i++):
             
             User user = new User(UID, firstName, lastName, city, state,
-                     zipCode, phoneNum, email, password);
+                     zipCode, phoneNum, email, password, username);
             result.add(user);
          }
          
