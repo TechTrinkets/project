@@ -7,11 +7,11 @@ package model;
 
 public class User {
 
-   private String firstName, lastName, city, state, email, password;
+   private String firstName, lastName, city, state, email, password, username;
    private int UID, zipCode, phoneNum; 
    
    public User(int UID, String firstName, String lastName, String city, 
-         String state, int zipCode, int phoneNum, String email, String password) {
+         String state, int zipCode, int phoneNum, String email, String password, String username) {
       
       this.firstName = firstName;
       this.lastName = lastName;
@@ -22,6 +22,7 @@ public class User {
       this.UID = UID;
       this.zipCode = zipCode;
       this.phoneNum = phoneNum;
+      this.username = username;
    }
    
    public String getFirstName(){ return firstName;}
